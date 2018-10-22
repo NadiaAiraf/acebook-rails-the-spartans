@@ -18,3 +18,6 @@ class PostsController < ApplicationController
     params.require(:post).permit(:message)
   end
 end
+
+# @test = PostsController.new
+# @test.create("testing")
