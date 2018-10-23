@@ -1,5 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  before_action :authenticate_user!
+  unless ENV['RAILS_ENV'] == "test"
+    before_action :authenticate_user!
+  end
 end
