@@ -28,6 +28,8 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'travis'
+gem 'pry'
+gem 'database_cleaner'
 
 gem 'devise'
 

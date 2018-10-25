@@ -2,7 +2,8 @@ require 'rails_helper'
 
 RSpec.describe PostsController, type: :controller do
   before(:each) do
-    user = double('user')
+
+    user = double('user', id: 1)
     allow(request.env['warden']).to receive(:authenticate!).and_return(user)
     allow(controller).to receive(:current_user).and_return(user)
   end
@@ -16,12 +17,20 @@ RSpec.describe PostsController, type: :controller do
 
   describe "POST /" do
     it "responds with 200" do
-      post :create, params: { post: { message: "Hello, world!" } }
+      User.create({email: 'flo@gmail.com',
+                password: 'password',
+                password_confirmation: 'password'
+                })
+      post :create, params: { post: { message: "Hello, world!", user_id: 1 } }
       expect(response).to redirect_to(posts_url)
     end
 
     it "creates a post" do
-      post :create, params: { post: { message: "Hello, world!" } }
+      User.create({email: 'flo@gmail.com',
+        password: 'password',
+        password_confirmation: 'password'
+        })
+      post :create, params: { post: { message: "Hello, world!", user_id: 2 } }
       expect(Post.find_by(message: "Hello, world!")).to be
     end
   end
