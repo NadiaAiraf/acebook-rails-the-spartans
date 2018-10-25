@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.feature "Timeline", type: :feature do
-
   scenario "User can sign_up" do
     visit "/users/sign_up"
     fill_in "user_email", with: "testuser@yahoo.com"
