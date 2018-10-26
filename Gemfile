@@ -30,6 +30,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'travis'
 gem 'pry'
 gem 'database_cleaner'
+gem 'timecop'
 
 gem 'devise'
 
