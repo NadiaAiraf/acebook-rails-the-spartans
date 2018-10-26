@@ -1,0 +1,17 @@
+def sign_up
+  visit "/users/sign_up"
+  fill_in "user_email", with: "testuser@yahoo.com"
+  fill_in "user_username", with: "testuser"
+  fill_in "user_password", with: "testpassword1234"
+  fill_in "user_password_confirmation", with: "testpassword1234"
+  click_button "Sign up"
+end
+ def new_post
+  click_link "New post"
+  fill_in "Message", with: "Hello, People!"
+  click_button "Submit"
+end
+ def set_times
+  post_time = Time.now
+  Timecop.freeze(post_time)
+end
