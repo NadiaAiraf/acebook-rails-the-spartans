@@ -3,8 +3,7 @@
   <p><%= post.message %></p>
   <a href='posts/<%= post.id %>'>link</a><br>
   <small><%= post.created_at.strftime("%a %b %e %T") %></small>
-  <br><br>
-  <div><%= Post.find_post_user(post.id) %></div><br>
+  <div><%= post.user_username %></div><br>
 
 
   </div>

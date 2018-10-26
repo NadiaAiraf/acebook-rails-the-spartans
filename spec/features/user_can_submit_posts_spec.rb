@@ -23,4 +23,8 @@ RSpec.feature "Timeline", type: :feature do
     click_button "Submit"
     expect(page).to have_content("Hello, world!")
   end
+
+  scenario 'posts appear in reverse order' do
+    
+  end
 end
