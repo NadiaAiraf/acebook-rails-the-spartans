@@ -41,5 +41,23 @@ RSpec.feature "Timeline", type: :feature do
   end
 end
 
+  scenario "Can check that the newest post appears first" do
+    visit "/users/sign_up"
+    fill_in "user_email", with: "testuser@yahoo.com"
+    fill_in "user_password", with: "testpassword1234"
+    fill_in "user_password_confirmation", with: "testpassword1234"
+    click_button "Sign up"
+    visit "/posts"
+    click_link "New post"
+    fill_in "Message", with: "Hello, People!"
+    click_button "Submit"
+    click_link "New post"
+    fill_in "Message", with: "Hello, Spartans!"
+    click_button "Submit"
+    post_time = Time.now
+    Timecop.freeze(post_time) do
+    expect(page).to have_content("Hello, Spartans! link " + post_time.strftime("%a %b %e %T")+ " " + "testuser@yahoo.com Hello, People!")
+  end
+end
 
 end
