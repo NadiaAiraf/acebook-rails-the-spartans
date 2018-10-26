@@ -24,8 +24,8 @@ end
     sign_up
     new_post
     click_link "New post"
-    fill_in "Message", with: "Hello, Spartans!"
+    fill_in "Message", with: "Hello, Spartan!"
     click_button "Submit"
-    set_times {expect(page).to have_content("Hello, Spartans! link " + post_time.strftime("%a %b %e %T")+ " " + "testuser@yahoo.com Hello, People!")}
+    set_times {expect(page).to have_content("Hello, Spartan! link " + post_time.strftime("%a %b %e %T")+ " " + "testuser@yahoo.com Hello, People!")}
   end
 end
