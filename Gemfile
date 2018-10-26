@@ -32,6 +32,7 @@ gem 'pry'
 gem 'database_cleaner'
 
 gem 'devise'
+gem 'timecop'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

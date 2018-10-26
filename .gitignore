@@ -18,7 +18,11 @@
 !/tmp/.keep
 
 /node_modules
-/coverage
+/coverage/*
+coverage/.last_run.json
+coverage/.resultset.json
+coverage/index.html
+
 /yarn-error.log
 
 .byebug_history
