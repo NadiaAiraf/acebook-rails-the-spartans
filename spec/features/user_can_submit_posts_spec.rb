@@ -30,4 +30,10 @@ RSpec.feature 'Timeline', type: :feature do
     click_button 'Submit'
     set_times { expect(page).to have_content('Hello, Spartans! link ' + post_time.strftime('%a %b %e %T') + ' ' + 'Hello, People!') }
   end
+
+  scenario "Users can see their email displayed next to their own posts" do
+    sign_up
+    new_post
+    expect(page).to have_content("testuser@yahoo.com posted: Hello, People!")
+  end
 end
