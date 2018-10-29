@@ -1,7 +1,7 @@
 <% @posts.each do |post| %>
   <div class="posts">
   <p><%= post.message %></p>
-  <a href='posts/<%= post.id %>'>link</a><br>
+  <a href='posts/<%= post.id %>'>link</a><br> | <%= link_to 'delete', post, method: :delete, id: "delete#{post.id}" %>
   <small><%= post.created_at.strftime("%a %b %e %T") %></small>
   <div><%= post.user_username %></div><br>
 
