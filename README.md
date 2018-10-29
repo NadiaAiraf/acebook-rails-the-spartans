@@ -3,7 +3,7 @@ Fluffy-Pig Readme
 
 Project Description:
 
-In just 2 weeks, Team Spartans have created a facebook clone, imaginatively named Acebook.
+In just 2 weeks, Team Spartans have created a Facebook clone, imaginatively named Acebook.
 
 
 Features:
@@ -22,7 +22,7 @@ Features:
 Installation Instructions:
   - Clone The Repo
   - Install Rails you fluffy-pig you
-  - Run Bundle Install. For all your Gem needs
+  - Run Bundle Install for all your Gem needs
   - Run DB:Create
   - Run DB:Migrate
 
@@ -49,3 +49,24 @@ How to Deploy with for Reals:
   - Acebook The Spartans master branch is automatically deployed on Heroku, providing all RSpec tests pass Travis CI's rigorous testing procedure.
   - This is the link https://acebook-the-spartans.herokuapp.com/users/sign_in
   - For log-in details and further information on Heroku deployment, contact your local Team Spartan team member, or TSTM for short.
+
+Team Spartan's Team Blog (TSTB)
+  - https://medium.com/@makersteamspartan
+
+Technologies Used in The Production of Acebook; by order of appearance
+  - Rails with Active Record
+  - Devise
+  - Fluffy-Pig
+  - Database Cleaner
+  - Detective Travis CI
+  - Capybara
+  - TimeCops
+  - Heroku
+  - SimpleCov
+  - Selenium Webdriver
+  - Rubocop
+
+
+Cast by order of Importance
+  - Florence Hapgood / Nic Giles
+  - Everyone else (Antonio D'aria & Aidan Faria)
