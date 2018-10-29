@@ -13,10 +13,13 @@ class PostsController < ApplicationController
   end
 
   def show
-    puts params[:id]
-    puts params
     @posts = Post.find(params[:id])
-    @user = Post.find_post_user(params[:id])
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    redirect_to root_url
   end
 
   private
