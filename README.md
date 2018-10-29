@@ -41,3 +41,11 @@ Real Instructions for Contributions:
   - Implement them.
   - Use TDD at all times.
   - If overwhelmed, hold fluffy-pig. Do not open. It is a waste of time and she doesn't like it.
+
+How to Deploy:
+  - We don't know. Heroku worked fine, but now 'Ed' if that is his real name, wants us to stick it on Amazon's web server. What's that about?
+
+How to Deploy with for Reals:
+  - Acebook The Spartans master branch is automatically deployed on Heroku, providing all RSpec tests pass Travis CI's rigorous testing procedure.
+  - This is the link https://acebook-the-spartans.herokuapp.com/users/sign_in
+  - For log-in details and further information on Heroku deployment, contact your local Team Spartan team member, or TSTM for short.
