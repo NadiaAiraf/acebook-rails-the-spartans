@@ -3,7 +3,7 @@ Fluffy-Pig Readme
 -----
 
 Project Description:
-------
+
 
 In just 2 weeks, Team Spartans have created a Facebook clone, imaginatively named Acebook.
 
