@@ -5,7 +5,7 @@ class Post < ApplicationRecord
     user.username
   end
 
-  def date_shown
+  def display_date
     if updated_at == nil
       t = created_at.in_time_zone("London")
       t.strftime("%a %b %e %T")
