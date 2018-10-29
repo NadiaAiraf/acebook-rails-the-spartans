@@ -4,7 +4,7 @@
   <a href='posts/<%= post.id %>'>link</a><br>
   <small><%= post.created_at.strftime("%a %b %e %T") %></small>
   <div><%= post.user_username %></div><br>
-
+  <%= link_to 'Edit Post', edit_post_path(post) %>
 
   </div>
 <% end %>
