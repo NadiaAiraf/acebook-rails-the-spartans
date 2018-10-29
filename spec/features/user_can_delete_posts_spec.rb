@@ -10,6 +10,15 @@ RSpec.feature "Delete posts", type: :feature do
     expect(page).not_to have_content("Hello, People!")
   end
 
+  scenario "User can't delete other's people's posts" do
+    sign_up
+    new_post
+    click_link "Logout"
+    sign_up_2
+    link = find('#delete1')
+    expect(link).not_to be_present
+  end
+
 
 
 
