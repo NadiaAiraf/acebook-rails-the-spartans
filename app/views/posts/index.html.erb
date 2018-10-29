@@ -2,7 +2,7 @@
     <div class="posts">
     <p><%= post.message %></p>
     <a href='posts/<%= post.id %>'>link</a><br>
-    <small><%= post.created_at.strftime("%a %b %e %T") %></small>
+    <small><%= post.date_shown %></small>
     <div><%= post.user_username %></div><br>
     <% if current_user.id == post.user_id %>
       <%= link_to 'Edit Post', edit_post_path(post) %>
