@@ -1,26 +1,17 @@
-# AceBook
 
-REQUIRED INSTRUCTIONS:
+Fluffy Pig Readme
 
-1. Fork this repository to `acebook-teamname` and customize
-the below**
+Project Description:
 
-[You can find the engineering project outline here.](https://github.com/makersacademy/course/tree/master/engineering_projects/rails)
+In just 2 weeks, Team Spartans have created a facebook clone, imaginatively named Acebook.
 
-2. The card wall is here: <please update>
 
-## How to contribute to this project
-See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-## Quickstart
-
-First, clone this repository. Then:
-
-```bash
-> bundle install
-> bin/rails db:create
-> bin/rails db:migrate
-
-> bundle exec rspec # Run the tests to ensure it works
-> bin/rails server # Start the server at localhost:3000
-```
+Features:
+ - Users can sign up
+ - Users can log in
+ - Users can also log out
+ - Users can make posts
+ - Users can stop the violence
+ - Users can see the post-time & author
+ - Users can update posts
+ - Users can delete posts
