@@ -15,8 +15,7 @@ RSpec.feature "Delete posts", type: :feature do
     new_post
     click_link "Logout"
     sign_up_2
-    link = find('#delete1')
-    expect(link).not_to be_present
+    expect{ find('#delete1') }.to raise_error
   end
 
 
