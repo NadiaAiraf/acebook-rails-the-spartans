@@ -41,3 +41,7 @@ end
 def like
   find('#like1').click
 end
+
+def unlike
+  find('#unlike1').click
+end
