@@ -5,5 +5,11 @@ Rails.application.routes.draw do
   # get 'posts'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'posts#index'
-  resources :posts, :users
+  
+  resources :users
+
+
+  resources :posts do
+  resources :comments
+end
 end

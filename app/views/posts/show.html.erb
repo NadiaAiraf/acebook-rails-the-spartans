@@ -1,2 +1,29 @@
 <h1>hello world</h1>
 <%= @posts.message %>
+
+<h2>Add a comment:</h2>
+<%= form_for([@posts, @posts.comments.build]) do |f| %>
+  <div class="field">
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+
+  <h2>Comments</h2>
+  <% @posts.comments.each do |comment| %>
+    <p>
+
+    <p>
+      <b>Comment:</b>
+      <%= comment.body %>
+    </p>
+  <% end %>
+
+
+
+  <br />
+
+<% end %>
