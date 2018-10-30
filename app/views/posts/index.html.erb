@@ -3,7 +3,7 @@
     <div class="posts">
     <small>On: <%= post.display_date %></small>
     <%= post.user.email%> posted:
-    <h3>  <%= post.message %> </h3> : likes: <%= post.likers(User).count %>
+    <h3>  <%= post.message %> </h3><%= post.likers(User).count %> Likes <br>
     <a href='posts/<%= post.id %>'>Link</a>
     <% if current_user.id == post.user_id %>
       | <%= link_to 'Delete', post, method: :delete, id: "delete#{post.id}" %>
