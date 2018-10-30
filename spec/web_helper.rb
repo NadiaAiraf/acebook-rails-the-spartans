@@ -37,3 +37,7 @@ end
 def logout
   click_link 'Logout'
 end
+
+def like
+  find('#like1').click
+end
