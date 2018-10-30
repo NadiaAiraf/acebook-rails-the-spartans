@@ -33,3 +33,7 @@ def sign_up_2
   fill_in "user_password_confirmation", with: "testpassword5"
   click_button "Sign up"
 end
+
+def logout
+  click_link 'Logout'
+end
