@@ -39,6 +39,13 @@ class PostsController < ApplicationController
     redirect_to posts_url
   end
 
+  def unlike
+    @user = current_user
+    @post = Post.find(params[:id])
+    @user.unlike!(@post)
+    redirect_to posts_url
+  end
+
   private
 
   def post_params
