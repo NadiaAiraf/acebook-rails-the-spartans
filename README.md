@@ -77,4 +77,4 @@ Cast by order of Importance
   
  Here is a wonderful diagram: 
  
- https://github.com/FlorenceHapgood/bowling-challenge
+[AcebookModel.pdf](https://github.com/makersacademy/acebook-rails-template/files/2531053/AcebookModel.pdf)
