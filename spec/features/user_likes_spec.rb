@@ -7,18 +7,18 @@ RSpec.feature 'Like posts', type: :feature do
     sign_up
     new_post
     like
-    expect(page).to have_content('1 Likes')
+    expect(page).to have_content('1 Like')
   end
 
   scenario 'Multiple users can like a post' do
     sign_up
     new_post
     like
-    expect(page).to have_content('1 Likes')
+    expect(page).to have_content('1 Like')
     logout
     sign_up_2
     like
-    expect(page).not_to have_content('1 Likes')
+    expect(page).not_to have_content('1 Like')
     expect(page).to have_content('2 Likes')
   end
 
@@ -26,7 +26,7 @@ RSpec.feature 'Like posts', type: :feature do
     sign_up
     new_post
     like
-    expect(page).to have_content('1 Likes')
+    expect(page).to have_content('1 Like')
     unlike
     expect(page).to have_content('0 Likes')
   end

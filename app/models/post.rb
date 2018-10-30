@@ -18,4 +18,12 @@ class Post < ApplicationRecord
     end
   end
 
+  def correct_likes
+    if likers(User).count == 1
+      return "1 Like"
+    else
+      return "#{likers(User).count} Likes"
+    end
+  end
+
 end
