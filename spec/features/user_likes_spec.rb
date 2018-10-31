@@ -15,7 +15,7 @@ RSpec.feature 'Like posts', type: :feature do
     logout
     sign_up_2
     like
-    expect(page).to have_content('testuser@yahoo.com and testuser2@yahoo.com like this')
+    expect(page).to have_content('testuser2@yahoo.com and testuser@yahoo.com like this')
   end
 
   scenario "User can unlike something they previously thought was quite good but now they don't think is very good" do
