@@ -1,0 +1,9 @@
+  <h1>Personalised feed</h1>
+    <% @b.each do |post| %>
+  <div>
+    <%= post.message %><br>
+    <%= post.user.email %><br>
+    <small><%= post.created_at %></small>
+  </div>
+  <br>
+  <% end %>
