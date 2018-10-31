@@ -4,7 +4,7 @@
     <small>On: <%= post.display_date %></small>
     <%= post.user.email%> posted:
     <h3>  <%= post.message %> </h3>
-    <a href='posts/<%= post.id %>'>link</a>
+    <a href='posts/<%= post.id %>'>Link</a>
     <% if current_user.id == post.user_id %>
       | <%= link_to 'delete', post, method: :delete, id: "delete#{post.id}" %>
       | <%= link_to 'Edit Post', edit_post_path(post) %>
