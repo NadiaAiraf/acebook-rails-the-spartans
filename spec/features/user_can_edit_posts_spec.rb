@@ -1,9 +1,4 @@
-require 'rails_helper'
-require 'timecop'
-require 'web_helper'
-
 RSpec.feature "Timeline", type: :feature do
-
   scenario "Can submit posts and view them" do
     sign_up
     new_post
@@ -20,7 +15,7 @@ RSpec.feature "Timeline", type: :feature do
     new_post
     expect(page).to have_content("Hello, People!")
     expect(page).to have_link('Edit Post')
-    click_on('Logout')
+    logout
     sign_up_2
     expect(page).to have_content("Hello, People!")
     expect(page).not_to have_link('Edit Post')

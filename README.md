@@ -73,3 +73,8 @@ Cast by order of Importance
   - Florence Hapgood / Nic Giles
   - Everyone else (Antonio D'aria & Aidan Faria)
   - This if of course a joke and all team members are vital to Team Sparta.
+  
+  
+ Here is a wonderful diagram: 
+ 
+[AcebookModel.pdf](https://github.com/makersacademy/acebook-rails-template/files/2531053/AcebookModel.pdf)

@@ -31,6 +31,7 @@ gem 'travis'
 gem 'pry'
 gem 'database_cleaner'
 gem 'timecop'
+gem 'socialization'
 
 gem 'devise'
 
