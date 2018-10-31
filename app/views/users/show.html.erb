@@ -3,12 +3,12 @@
 
 <div>
   <% if @user != current_user && !(@user.followed_by?(current_user)) %>
-    add <%= @user.email %> as a friend <%= button_to "🙋" %>
+    Follow <%= @user.email %><%= button_to "🙋", follows_url, method: :post, :id => 'follow'  %>
   <% end %>
 </div>
 
 <br>
-<div>friends:
+<div>Followers:
 <% @friends.each do |x| %>
   <%= x.email %>
 <% end %>
