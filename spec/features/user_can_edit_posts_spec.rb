@@ -20,7 +20,7 @@ RSpec.feature "Timeline", type: :feature do
     new_post
     expect(page).to have_content("Hello, People!")
     expect(page).to have_link('Edit Post')
-    click_on('Logout')
+    logout
     sign_up_2
     expect(page).to have_content("Hello, People!")
     expect(page).not_to have_link('Edit Post')

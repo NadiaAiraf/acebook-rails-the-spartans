@@ -1,0 +1,15 @@
+<h1>Profile page: <%= @user.email %></h1>
+<small><%= link_to "back", root_url %></small> <br> <br>
+
+<div>
+  <% if @user != current_user && !(@user.followed_by?(current_user)) %>
+    add <%= @user.email %> as a friend
+  <% end %>
+</div>
+
+
+<div>friends:
+<% @friends.each do |x| %>
+  <%= x.email %>
+<% end %>
+</div>
