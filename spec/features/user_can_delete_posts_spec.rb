@@ -15,7 +15,7 @@ RSpec.feature 'Delete posts', type: :feature do
   scenario "User can't delete other people's posts" do
     sign_up
     new_post
-    click_link 'Logout'
+    logout
     sign_up_2
     expect { find('#delete1') }.to raise_error
   end
