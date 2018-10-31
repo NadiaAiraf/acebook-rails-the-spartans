@@ -34,10 +34,10 @@ class Post < ApplicationRecord
     return "#{names[0]} likes this"
     end
     if a == 2
-    return "#{names[1]} and #{names[0]} like this"
+    return "#{names[0]} and #{names[1]} like this"
     end
     if a == 3
-    return "#{names[2]}, #{names[1]} and #{names[0]} like this"
+    return "#{names[0]}, #{names[1]} and #{names[2]} like this"
     end
     if a >= 4
     return "#{names[a-1]}, #{names[a-2]} and #{a-2} others like this"
