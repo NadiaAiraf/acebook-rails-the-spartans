@@ -48,8 +48,8 @@ class PostsController < ApplicationController
   end
 
   def feed
-    @a = Follow.where(follower_id: current_user.id).map{|x| x.followable_id }
-    @b = Post.all.order("created_at DESC").map{|x| @a.include?(x.user_id) ? x : nil}.compact
+    @followed_ids = Follow.where(follower_id: current_user.id).map{|x| x.followable_id }
+    @followed_posts = Post.all.order("created_at DESC").map{|x| @followed_ids.include?(x.user_id) ? x : nil}.compact
   end
 
   private

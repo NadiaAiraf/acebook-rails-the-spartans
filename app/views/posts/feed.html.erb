@@ -1,8 +1,8 @@
   <h1>Personalised feed</h1>
-  <% if @b.empty? %>
+  <% if @followed_posts.empty? %>
     <h3>You haven't followed anyone</h3>
   <% else %>
-    <% @b.each do |post| %>
+    <% @followed_posts.each do |post| %>
       <div>
         <%= post.message %><br>
         <%= post.user.email %><br>
