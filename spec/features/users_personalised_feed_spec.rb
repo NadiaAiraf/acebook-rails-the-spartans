@@ -11,7 +11,7 @@ RSpec.feature "Personlised news feed", type: :feature do
     expect(page).to have_content("You haven't followed anyone")
   end
 
-  scenario "User can see post of something they follow" do
+  scenario "User can see post of someone they follow" do
     sign_up
     new_post
     logout
@@ -20,5 +20,14 @@ RSpec.feature "Personlised news feed", type: :feature do
     find('#follow').click
     visit '/feed'
     expect(page).to have_content("Hello, People!")
+  end
+
+  scenario "Main feed does not affect personal feed" do
+    sign_up
+    new_post
+    logout
+    sign_up_2
+    visit '/feed'
+    expect(page).to have_content("You haven't followed anyone")
   end
 end
