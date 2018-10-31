@@ -1,9 +1,3 @@
-# frozen_string_literal: true
-
-require 'rails_helper'
-require 'timecop'
-require 'web_helper'
-
 RSpec.feature 'Delete posts', type: :feature do
   scenario 'User can delete posts' do
     sign_up

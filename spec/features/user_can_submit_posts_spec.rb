@@ -1,9 +1,3 @@
-# frozen_string_literal: true
-
-require 'rails_helper'
-require 'timecop'
-require 'web_helper'
-
 RSpec.feature 'Timeline', type: :feature do
   scenario 'User can sign_up' do
     sign_up
@@ -35,5 +29,23 @@ RSpec.feature 'Timeline', type: :feature do
     sign_up
     new_post
     expect(page).to have_content("testuser@yahoo.com posted: Hello, People!")
+  end
+
+  scenario "Posts have a link to a page for that post" do
+    sign_up
+    new_post
+    find('#link1').click
+    expect(page).to have_content("Hello, People!")
+    puts current_path
+    expect(current_path).to eq '/posts/1'
+  end
+
+  scenario "Posts have a link to a Users Profile page" do
+    sign_up
+    new_post
+    find('#profile1').click
+    expect(page).to have_content("Profile page: testuser@yahoo.com")
+    puts current_path
+    expect(current_path).to eq '/users/1'
   end
 end

@@ -26,12 +26,29 @@ def set_times
   post_time = Time.now
   Timecop.freeze(post_time)
 end
-def sign_up_2
-  visit "/users/sign_up"
-  fill_in "user_email", with: "testuser5@yahoo.com"
-  fill_in "user_password", with: "testpassword5"
-  fill_in "user_password_confirmation", with: "testpassword5"
-  click_button "Sign up"
+
+def logout
+  click_link 'Logout'
+end
+
+def like
+  find('#like1').click
+end
+
+def unlike
+  find('#unlike1').click
+end
+
+def logout
+  click_link 'Logout'
+end
+
+def like
+  find('#like1').click
+end
+
+def unlike
+  find('#unlike1').click
 end
 
 def logout
