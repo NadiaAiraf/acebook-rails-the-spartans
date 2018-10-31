@@ -3,11 +3,16 @@
     <div class="posts">
     <small>On: <%= post.display_date %></small>
     <%= post.user.email%> posted:
-    <h3>  <%= post.message %> </h3>
-    <a href='posts/<%= post.id %>'>link</a>
+    <h3>  <%= post.message %> </h3><%= post.correct_likes %><br>
+    <a href='posts/<%= post.id %>'>Link</a>
     <% if current_user.id == post.user_id %>
-      | <%= link_to 'delete', post, method: :delete, id: "delete#{post.id}" %>
+      | <%= link_to 'Delete', post, method: :delete, id: "delete#{post.id}" %>
       | <%= link_to 'Edit Post', edit_post_path(post) %>
+    <% end %>
+    | <% if current_user.likes?(post)  %>
+    <%= link_to 'Unlike', unlikes_path(post), method: :post, :class => 'Unlike-button', :id => "unlike#{post.id}" %>
+    <% else %>
+    <%= link_to 'Like', likes_path(post), method: :post, :class => 'like-button', :id => "like#{post.id}" %>
     <% end %>
    <br>
    <br><br><br>

@@ -33,6 +33,19 @@ class PostsController < ApplicationController
     redirect_to posts_url, notice: "Post updated!"
   end
 
+  def like
+    @user = current_user
+    @post = Post.find(params[:id])
+    @user.like!(@post)
+    redirect_to posts_url
+  end
+
+  def unlike
+    @user = current_user
+    @post = Post.find(params[:id])
+    @user.unlike!(@post)
+    redirect_to posts_url
+  end
 
   private
 
