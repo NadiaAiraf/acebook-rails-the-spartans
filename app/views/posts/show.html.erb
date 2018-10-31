@@ -9,6 +9,7 @@
   <p>
     <b>Comment:</b>
     <%= comment.body %>
+    <%= link_to "delete", "/posts/#{@posts.id}/comments/#{comment.id}", method: :delete %>
   </p>
 <% end %>
 
