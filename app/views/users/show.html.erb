@@ -3,11 +3,11 @@
 
 <div>
   <% if @user != current_user && !(@user.followed_by?(current_user)) %>
-    add <%= @user.email %> as a friend
+    add <%= @user.email %> as a friend <%= button_to "🙋" %>
   <% end %>
 </div>
 
-
+<br>
 <div>friends:
 <% @friends.each do |x| %>
   <%= x.email %>

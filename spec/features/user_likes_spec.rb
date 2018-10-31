@@ -1,7 +1,3 @@
-require 'rails_helper'
-require 'timecop'
-require 'web_helper'
-
 RSpec.feature 'Like posts', type: :feature do
   scenario 'User likes a post and it appears' do
     sign_up

@@ -1,9 +1,3 @@
-# frozen_string_literal: true
-
-require 'rails_helper'
-require 'timecop'
-require 'web_helper'
-
 RSpec.feature 'Timeline', type: :feature do
   scenario 'User can sign_up' do
     sign_up
