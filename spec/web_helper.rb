@@ -50,3 +50,15 @@ end
 def unlike
   find('#unlike1').click
 end
+
+def logout
+  click_link 'Logout'
+end
+
+def like
+  find('#like1').click
+end
+
+def unlike
+  find('#unlike1').click
+end
