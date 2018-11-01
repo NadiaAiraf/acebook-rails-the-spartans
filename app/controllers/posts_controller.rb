@@ -14,7 +14,7 @@ class PostsController < ApplicationController
 
   def show
     @posts = Post.find(params[:id])
-    
+
   end
 
   def destroy
@@ -45,6 +45,11 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @user.unlike!(@post)
     redirect_to posts_url
+  end
+
+  def feed
+    @followed_ids = Follow.where(follower_id: current_user.id).map{|x| x.followable_id }
+    @followed_posts = Post.all.order("created_at DESC").map{|x| @followed_ids.include?(x.user_id) ? x : nil}.compact
   end
 
   private

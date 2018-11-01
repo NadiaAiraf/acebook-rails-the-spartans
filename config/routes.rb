@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   post 'post/:id/likes', to: 'posts#like', as: :likes
   post 'user/:id/addfriend', to: 'users#addfriend', as: :follows
   post 'post/:id/unlikes', to: 'posts#unlike', as: :unlikes
+  get 'feed', to: 'posts#feed', as: :news
 end

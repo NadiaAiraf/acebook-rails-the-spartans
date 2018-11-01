@@ -1,0 +1,13 @@
+  <h1>Personalised feed</h1>
+  <% if @followed_posts.empty? %>
+    <h3>You haven't followed anyone</h3>
+  <% else %>
+    <% @followed_posts.each do |post| %>
+      <div>
+        <%= post.message %><br>
+        <%= post.user.email %><br>
+        <small><%= post.created_at %></small>
+      </div>
+      <br>
+    <% end %>
+  <% end %>
