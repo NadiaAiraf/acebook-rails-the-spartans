@@ -5,7 +5,7 @@
 .bg {
   position: relative;
   background-color: lightblue;
-  top: 20px;
+  top: 80px;
   opacity: 0.85;
   outline-style: solid;
   background-color: #ffffff;
@@ -23,4 +23,16 @@
 
 .actions {
   color: black
+}
+
+.btn-outline-info.custom-btn {
+  background-color: #4B0082;
+  border-color: white;
+  color: #FFF;
+}
+
+.btn-outline-info.custom-btn:hover {
+  background-color: #FFF;
+  border-color: #4B0082;
+  color: #4B0082;
 }
