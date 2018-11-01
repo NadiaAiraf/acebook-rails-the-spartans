@@ -1,13 +1,19 @@
-<br><br><br><br><br><br>
+
 <center>
 <body class="body">
 <div class="message_box">
-  <%= form_for @post do |form| %>
-  <%= form.label :message %>
-  <%= form.text_field :message %>
+  <div class="container">
+     <br>
+         Message<br>
 
-  <%= form.submit "Submit" %>
+     <img src = "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/central-perk-friends-james-carroll.jpg" width=70% height=70%>
 </div>
+  <%= form_for @post do |form| %>
+
+  <%= form.text_field :message%>
+  <%= form.submit "Submit", id:"submit_post"%>
+
 <% end %>
+</div>
 <div class="body">
 </body>

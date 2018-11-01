@@ -54,17 +54,35 @@ background-color: #8585ad;}
 }
 .message_box {
   width: 300px;
+  height: 200px;
   background-color: #f0f0f5;
   color: #003300;
-  font: 18px Lucida;
+  font: 30px Lucida;
   margin-left: 30%;
   margin-right: 30%;
-  margin-top: 1%;
+  margin-top: 8%;
   margin-bottom: 1%;
   border-bottom: 1px;
-  border-style: dotted;
   border-radius: 15px 80px;
   border: 5px solid BurlyWood;
-  padding: 20px;
+  padding: 100px;
+}
+
+#post_message {
+  width: 200px;
+  padding: 40px;
+  margin-left: 1%
+}
+
+#submit_post {
+  height: 400px;
+  width: 200px;
+  margin-top: 2%;
+}
+
+.container{
+  font: 38px Lucida;
+  margin-top: -35%;
+  margin-bottom: 2%;
 
 }
