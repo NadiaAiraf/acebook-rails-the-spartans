@@ -1,5 +1,5 @@
-<body class="bg">
-
+<body class="body-bg">
+<div class= "bg">
 <h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -21,9 +21,10 @@
   <% end -%>
 
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit "Log in", :id => 'register-sign-up', :class => 'btn btn-outline-info'%>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>
 </body>
