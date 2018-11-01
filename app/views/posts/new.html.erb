@@ -1,6 +1,13 @@
-<%= form_for @post do |form| %>
+<br><br><br><br><br><br>
+<center>
+<body class="body">
+<div class="message_box">
+  <%= form_for @post do |form| %>
   <%= form.label :message %>
   <%= form.text_field :message %>
 
   <%= form.submit "Submit" %>
+</div>
 <% end %>
+<div class="body">
+</body>
