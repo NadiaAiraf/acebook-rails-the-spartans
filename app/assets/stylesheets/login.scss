@@ -1,2 +1,11 @@
-body {
+.bg {
+  background-image: url(monicas-apartment.jpg);
+  outline-style: solid;
+  background-color: #ffffff;
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: center;
+  outline-style: double;
+  max-width: 50%;
+  margin: auto;
+  padding-bottom: 20px
 }
