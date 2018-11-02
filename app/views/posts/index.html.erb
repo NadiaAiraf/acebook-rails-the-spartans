@@ -4,7 +4,7 @@
     <small>On: <%= post.display_date %></small>
     <%= link_to post.user.email, user_path(post.user), method: :get, :id => "profile#{post.user.id}" %> posted:
     <h3>  <%= post.message %> </h3><small><%= post.facebook_likes %><br></small>
-    <a href='posts/<%= post.id %>' id="link<%= post.id %>">Link</a>
+    <a href='posts/<%= post.id %>' id="link<%= post.id %>">Comments</a>
     <% if current_user.id == post.user_id %>
       | <%= link_to 'Delete', post, method: :delete, id: "delete#{post.id}" %>
       | <%= link_to 'Edit Post', edit_post_path(post) %>
