@@ -16,9 +16,18 @@
  color: #003300;
  font: 38px Lucida;
  border: 5px solid BurlyWood;
- margin-left: 40%;
- margin-right: 40%;
- border-radius: 20px
+ margin-left: 25%;
+ margin-right: 25%;
+ border-radius: 20px;
+ width: 50%;
+
+}
+
+.friends_title {
+color: #003300;
+font: 65px Lucida;
+font-style: italic;
+
 }
 
 
@@ -80,9 +89,40 @@ background-color: #8585ad;}
   margin-top: 2%;
 }
 
+#text_area{
+  height: 60px;
+  width: 80%;
+  margin-top: 2%;
+}
+
+#update {
+  height: 400px;
+  width: 200px;
+  margin-top: 2%;
+}
+
 .container{
   font: 38px Lucida;
   margin-top: -35%;
   margin-bottom: 2%;
+}
 
+.edit_container{
+  font: 30px Lucida;
+  margin-top: -35%;
+  margin-bottom: 2%;
+}
+.your_posts {
+background-color: #f0f0f5;
+color: #003300;
+font: 18px Lucida;
+margin-left: 30%;
+margin-right: 30%;
+margin-top: 1%;
+margin-bottom: 1%;
+border-bottom: 1px;
+border-style: dotted;
+border-radius: 15px 80px;
+border: 5px solid BurlyWood;
+padding: 5px;
 }

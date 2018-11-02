@@ -4,7 +4,7 @@ RSpec.feature "Timeline", type: :feature do
     new_post
     expect(page).to have_content("Hello, People!")
     click_on'Edit Post'
-    fill_in'Message', with: "Fluffy Pig"
+    fill_in'text_area', with: "Fluffy Pig"
     click_button "Update!"
     expect(page).not_to have_content("Hello, People!")
     expect(page).to have_content("Fluffy Pig")
@@ -29,7 +29,7 @@ RSpec.feature "Timeline", type: :feature do
     expect(page).to have_content('Sat Oct 13 12:00:00')
     Timecop.freeze(Time.zone.parse('12:45 13 October 2018'))
     click_on('Edit Post')
-    fill_in('Message', with: 'lots of changes to post')
+    fill_in('text_area', with: 'lots of changes to post')
     click_button('Update!')
     expect(page).not_to have_content('Hello, People!')
     expect(page).not_to have_content('Sat Oct 13 12:00:00')

@@ -18,6 +18,6 @@ RSpec.feature 'Delete posts', type: :feature do
     sign_up
     new_post
     find('#delete1').click
-    expect(page).to have_content 'Your Board Create a New Post'
+    expect(page).to have_content 'Central Perk Notice Board Create a New Post'
   end
 end
