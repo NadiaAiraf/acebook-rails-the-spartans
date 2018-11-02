@@ -10,7 +10,7 @@
       | <%= link_to 'Edit Post', edit_post_path(post) %>
     <% end %>
     | <% if current_user.likes?(post)  %>
-    <%= link_to 'Unlike', feed_path(post), method: :post, :class => 'Unlike-button', :id => "unlike#{post.id}" %>
+    <%= link_to 'Unlike', unlikes_path(post), method: :post, :class => 'Unlike-button', :id => "unlike#{post.id}" %>
     <% else %>
     <%= link_to 'Like', likes_path(post), method: :post, :class => 'like-button', :id => "like#{post.id}" %>
     <% end %>
