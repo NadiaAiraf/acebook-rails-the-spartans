@@ -1,24 +1,26 @@
-<small><%= link_to "back", root_url %></small> <br> <br>
-
-<%= @posts.message %>
-<p>
-
-<h2>Comments</h2>
+<center>
+<body class="body">
+<div class="your_post">
+  <h2>Post:</h2>
+<%= @posts.message %></div>
+<p></p><br>
+<div class="your_posts">
+<h2>Comments:</h2>
 <% @posts.comments.each do |comment| %>
   <p>
   <p>
-    <b>Comment:</b>
+    <b>-</b>
     <%= comment.body %>
     <%= link_to "delete", "/posts/#{@posts.id}/comments/#{comment.id}", method: :delete %>
   </p>
-<% end %>
+<% end %></div>
 
 <h2>Add a comment:</h2>
 <%= form_with(model: [@posts, @posts.comments.build], local: true) do |f| %>
-    <%= f.label :body %>
-    <%= f.text_area :body %>
-  </div>
+    <%= f.text_area :body, id:"body" %>
   <div id="submit">
     <%= f.submit %>
   </div>
   <% end %>
+<small><%= link_to "back", root_url %></small> <br> <br>
+  </body>
