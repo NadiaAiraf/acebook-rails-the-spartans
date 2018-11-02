@@ -1,13 +1,27 @@
-  <h1>Personalised feed</h1>
+<body class="body">
+
+
+
+<small><%= link_to "back", root_url %></small> <br> <br>
+
+  <Center><div class = "friends_title">Your  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOP09cdZkWQmnSzguUPwR72D0xwClMM8CEpNa2qAERpFv3dWFM" width=15% height=15%>'s Posts!</div>
   <% if @followed_posts.empty? %>
     <h3>You haven't followed anyone</h3>
   <% else %>
     <% @followed_posts.each do |post| %>
-      <div>
-        <%= post.message %><br>
-        <%= post.user.email %><br>
-        <small><%= post.created_at %></small>
+      <div class="your_posts">
+        <div class="time_line"><small><center>On: <%= post.display_date %></small> <%= post.user.email %> posted: </div>
+        <center><h3><%= post.message %></h3>
+          <small><%= post.facebook_likes %><br></small>
+          <% if current_user.likes?(post)  %>
+          <%= link_to 'Unlike', feed_unlikes_path(post), method: :post, :class => 'Unlike-button', :id => "unlike#{post.id}" %>
+          <% else %>
+          <%= link_to 'Like', feed_likes_path(post), method: :post, :class => 'like-button', :id => "like#{post.id}" %>
+          <% end %>
+
       </div>
       <br>
     <% end %>
   <% end %>
+
+  </body>
