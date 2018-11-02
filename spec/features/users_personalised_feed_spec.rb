@@ -11,6 +11,14 @@ RSpec.feature "Personlised news feed", type: :feature do
     expect(page).to have_content("You haven't followed anyone")
   end
 
+  scenario "User can choose to return to homepage" do
+    sign_up
+    visit "/feed"
+    expect(page).to have_content("You haven't followed anyone")
+    click_link('back')
+    expect(page).to have_current_path('/')
+  end
+
   scenario "User can see post of someone they follow" do
     sign_up
     new_post
