@@ -1,0 +1,49 @@
+.profile-body-bg{
+  background-image: url(CentralPerk.jpg);
+  background-size: cover;
+}
+
+.profile{
+  position: relative;
+  background-color: lightblue;
+  top: 80px;
+  opacity: 0.95;
+  outline-style: solid;
+  background-color: #ffffff;
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: center;
+  outline-style: double;
+  max-width: 70%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.followers{
+  position: relative;
+  background-color: lightblue;
+  top: 80px;
+  opacity: 0.95;
+  outline-style: solid;
+  background-color: #ffffff;
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: center;
+  outline-style: double;
+  max-width: 70%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.profile-pic {
+  margin: 10px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.followers-pic {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+}

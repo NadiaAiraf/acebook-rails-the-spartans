@@ -42,7 +42,7 @@ RSpec.feature 'Timeline', type: :feature do
     sign_up
     new_post
     find('#profile1').click
-    expect(page).to have_content("Profile page: testuser@yahoo.com")
+    expect(page).to have_content("This is Your Profile Page testuser@yahoo.com Followers:")
     puts current_path
     expect(current_path).to eq '/users/1'
   end

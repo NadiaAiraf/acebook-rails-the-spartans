@@ -1,0 +1,43 @@
+.body-bg{
+  background-image: url(monicas-apartment.jpg);
+  background-repeat: space;
+  background-size: cover;
+  background-color: #e6ccff;
+  height: 100vh;
+}
+
+.bg {
+  position: relative;
+  background-color: lightblue;
+  top: 80px;
+  opacity: 0.85;
+  outline-style: solid;
+  background-color: #ffffff;
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: center;
+  outline-style: double;
+  max-width: 50%;
+  margin: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#register-sign-up {
+  margin: 20px
+}
+
+.actions {
+  color: black
+}
+
+.btn-outline-info.custom-btn {
+  background-color: #4B0082;
+  border-color: white;
+  color: #FFF;
+}
+
+.btn-outline-info.custom-btn:hover {
+  background-color: #FFF;
+  border-color: #4B0082;
+  color: #4B0082;
+}

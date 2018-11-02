@@ -1,5 +1,8 @@
-<h1>Profile page: <%= @user.email %></h1>
-<small><%= link_to "back", root_url %></small> <br> <br>
+<body class="profile-body-bg">
+
+<div class="profile" >
+<img src="https://lianaminassian.files.wordpress.com/2015/07/s1e18_waddles_stare.png" alt="pig" class='profile-pic'>
+  This is Your Profile Page <%= @user.email %>
 
 <div>
   <% if @user != current_user && !(@user.followed_by?(current_user)) %>
@@ -7,9 +10,16 @@
   <% end %>
 </div>
 
+</div>
 <br>
-<div>Followers:
+<div class="followers"> Followers:
 <% @friends.each do |x| %>
+<div class="">
+  <img src="https://lianaminassian.files.wordpress.com/2015/07/s1e18_waddles_stare.png" alt="pig" class='followers-pic'>
   <%= x.email %>
+
+</div>
 <% end %>
 </div>
+
+</body>
