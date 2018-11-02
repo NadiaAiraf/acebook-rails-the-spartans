@@ -78,14 +78,14 @@ background-color: #8585ad;}
 }
 
 #post_message {
-  width: 200px;
-  padding: 40px;
+  width: 50%;
+  padding: 50%;
   margin-left: 1%
 }
 
 #submit_post {
-  height: 400px;
-  width: 200px;
+  height: 80%;
+  width: 80%;
   margin-top: 2%;
 }
 
@@ -101,7 +101,13 @@ background-color: #8585ad;}
   margin-top: 2%;
 }
 
-.container{
+.container2{
+  font: 38px Lucida;
+  margin-top: -35%;
+  margin-bottom: 2%;
+}
+
+.container2{
   font: 38px Lucida;
   margin-top: -35%;
   margin-bottom: 2%;
@@ -140,4 +146,98 @@ border-style: dotted;
 border-radius: 15px 80px;
 border: 5px solid BurlyWood;
 padding: 5px;
+}
+
+.body-bg{
+  background-image: url(monicas-apartment.jpg);
+  background-repeat: space;
+  background-size: cover;
+  background-color: #e6ccff;
+  height: 100vh;
+}
+
+.bg {
+  position: relative;
+  background-color: lightblue;
+  top: 80px;
+  opacity: 0.85;
+  outline-style: solid;
+  background-color: #ffffff;
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: center;
+  outline-style: double;
+  max-width: 50%;
+  margin: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#register-sign-up {
+  margin: 20px
+}
+
+.actions {
+  color: black
+}
+
+.btn-outline-info.custom-btn {
+  background-color: #4B0082;
+  border-color: white;
+  color: #FFF;
+}
+
+.btn-outline-info.custom-btn:hover {
+  background-color: #FFF;
+  border-color: #4B0082;
+  color: #4B0082;
+}
+
+.profile-body-bg{
+  background-image: url(CentralPerk.jpg);
+  background-size: cover;
+}
+
+.profile{
+  position: relative;
+  background-color: lightblue;
+  top: 80px;
+  opacity: 0.95;
+  outline-style: solid;
+  background-color: #ffffff;
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: center;
+  outline-style: double;
+  max-width: 70%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.followers{
+  position: relative;
+  background-color: lightblue;
+  top: 80px;
+  opacity: 0.95;
+  outline-style: solid;
+  background-color: #ffffff;
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: center;
+  outline-style: double;
+  max-width: 70%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.profile-pic {
+  margin: 10px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.followers-pic {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
 }
