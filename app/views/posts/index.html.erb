@@ -1,10 +1,28 @@
-<h1> Your Board </h1>
+
+
+<body class="body">
+
+<div class="back">
+  <p class="navbar-text"</p>
+
+
+<center>
+  <div class ="title"<h1> Your Board </h1> </div>
+
+
+<h3><%= link_to new_post_path do %>
+Create a New Post
+<% end %></h3>
+
+
   <% @posts.each do |post| %>
+  <div class="image_friends">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOP09cdZkWQmnSzguUPwR72D0xwClMM8CEpNa2qAERpFv3dWFM" width=15% height=15%></div>
     <div class="posts">
-    <small>On: <%= post.display_date %></small>
-    <%= link_to post.user.email, user_path(post.user), method: :get, :id => "profile#{post.user.id}" %> posted:
-    <h3>  <%= post.message %> </h3><small><%= post.facebook_likes %><br></small>
-    <a href='posts/<%= post.id %>' id="link<%= post.id %>">Link</a>
+    <div class="time_line"><small><center>On: <%= post.display_date %></small>
+    <%= link_to post.user.email, user_path(post.user), method: :get, :id => "profile#{post.user.id}" %> posted:</div>
+    <center><h3><%= post.message %></h3><small><%= post.facebook_likes %><br></small>
+    <a href='posts/<%= post.id %>' id="link<%= post.id %>"><div class="bottom_line">Link</a>
     <% if current_user.id == post.user_id %>
       | <%= link_to 'Delete', post, method: :delete, id: "delete#{post.id}" %>
       | <%= link_to 'Edit Post', edit_post_path(post) %>
@@ -14,13 +32,9 @@
     <% else %>
     <%= link_to 'Like', likes_path(post), method: :post, :class => 'like-button', :id => "like#{post.id}" %>
     <% end %>
-   <br>
-   <br><br><br>
+    </div>
     </div>
   <% end %>
 
-  <h3>This is where you create a new post</h3>
-
-  <%= link_to new_post_path do %>
-    New post
-  <% end %>
+  </body>
+  

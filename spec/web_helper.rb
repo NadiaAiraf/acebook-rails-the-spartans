@@ -17,38 +17,20 @@ def sign_up_2
 end
 
 def new_post
-  click_link 'New post'
-  fill_in 'Message', with: 'Hello, People!'
+  click_link 'Create a New Post'
+  fill_in 'post_message', with: 'Hello, People!'
+  click_button 'Submit'
+end
+
+def new_post_2
+  click_link 'Create a New Post'
+  fill_in 'post_message', with: 'Hello, Spartans!'
   click_button 'Submit'
 end
 
 def set_times
   post_time = Time.now
   Timecop.freeze(post_time)
-end
-
-def logout
-  click_link 'Logout'
-end
-
-def like
-  find('#like1').click
-end
-
-def unlike
-  find('#unlike1').click
-end
-
-def logout
-  click_link 'Logout'
-end
-
-def like
-  find('#like1').click
-end
-
-def unlike
-  find('#unlike1').click
 end
 
 def logout

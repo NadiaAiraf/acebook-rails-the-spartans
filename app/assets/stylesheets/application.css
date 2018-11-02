@@ -9,7 +9,80 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
+
  */
+
+ .title {
+ color: #003300;
+ font: 38px Lucida;
+ border: 5px solid BurlyWood;
+ margin-left: 40%;
+ margin-right: 40%;
+ border-radius: 20px
+}
+
+
+.time_line {
+color: #0000e6;}
+
+.bottom_line {
+ color: #0000e6;}
+
+.posts {
+background-color: #f0f0f5;
+color: #003300;
+font: 18px Lucida;
+margin-left: 30%;
+margin-right: 30%;
+margin-top: 1%;
+margin-bottom: 1%;
+border-bottom: 1px;
+border-style: dotted;
+border-radius: 15px 80px;
+border: 5px solid BurlyWood;
+padding: 5px;
+}
+
+.back {
+background-color: #8585ad;
+}
+
+.body {
+background-color: #8585ad;}
+
+.image_friends {
+}
+.message_box {
+  width: 300px;
+  height: 200px;
+  background-color: #f0f0f5;
+  color: #003300;
+  font: 30px Lucida;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 8%;
+  margin-bottom: 1%;
+  border-bottom: 1px;
+  border-radius: 15px 80px;
+  border: 5px solid BurlyWood;
+  padding: 100px;
+}
+
+#post_message {
+  width: 200px;
+  padding: 40px;
+  margin-left: 1%
+}
+
+#submit_post {
+  height: 400px;
+  width: 200px;
+  margin-top: 2%;
+}
+
+.container{
+  font: 38px Lucida;
+  margin-top: -35%;
+  margin-bottom: 2%;
+
+}
