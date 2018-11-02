@@ -1,7 +1,7 @@
 RSpec.feature 'Timeline', type: :feature do
   scenario 'User can sign_up' do
     sign_up
-    expect(page).to have_content("Your Board Create a New Post")
+    expect(page).to have_content("Central Perk Notice Board Create a New Post")
   end
 
   scenario 'Can submit posts and view them' do

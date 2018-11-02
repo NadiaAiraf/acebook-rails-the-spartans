@@ -1,6 +1,19 @@
-Edit post (if you dare...)
+
+<center>
+<body class="body">
+<div class="message_box">
+  <div class="edit_container">
+     <br>
+        Edit post (if you dare...)<br><br>
+
+     <img src = "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/central-perk-friends-james-carroll.jpg" width=70% height=70%>
+</div>
+
 <%= form_for @post do |form| %>
-<%= form.label :message %>
-<%= form.text_area :message %>
-<%= form.submit "Update!" %>
+<%= form.text_area :message, id: "text_area" %>
+<%= form.submit "Update!", id: "update"%>
 <% end %>
+
+</div>
+<div class="body">
+</body>
