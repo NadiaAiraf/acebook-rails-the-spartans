@@ -76,7 +76,8 @@ Technologies Used in The Production of Acebook; in order of appearance:
   
 Other things:
 Here is a wonderful diagram:
-[AcebookModel.pdf](https://github.com/makersacademy/acebook-rails-template/files/2531053/AcebookModel.pdf)
+[AcebookModel_1.pdf](https://github.com/makersacademy/acebook-rails-template/files/2546120/AcebookModel_1.pdf)
+
 
 Cast, in order of Importance:
   - Florence Hapgood / Nic Giles 
