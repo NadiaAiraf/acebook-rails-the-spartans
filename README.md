@@ -4,7 +4,7 @@ Acebook Readme
 
 Project Description:
 
-In 2 weeks, Team Spartans have created a Facebook clone, imaginatively named Acebook. We had a fluffy pig toy mascot, which provided us with emotional support, and there might be some references to that in this readme.
+In 2 weeks, Team Spartans have created a Facebook clone, imaginatively named Acebook. We had a fluffy pig toy mascot, which provided us with emotional support, and there might be some references to that in this README.
 
 Features:
  - Users can sign up
@@ -26,11 +26,11 @@ Features:
 
 
 Installation Instructions:
-  - Clone The Repo
+  - Clone this Repo
   - Install Rails
-  - Run Bundle Install for all your Gem needs
-  - Run DB:Create
-  - Run DB:Migrate
+  - Run Bundle Install for all your gem needs
+  - Run db:create
+  - Run db:migrate
 
 How to Run Locally:
   - Run Bin/Rails Server
@@ -44,22 +44,20 @@ Real Instructions for Contributions:
   - If overwhelmed, hold the fluffy pig. Do not open. It is a waste of time and it doesn't like it.
 
 Challenges:
-  - Heroku worked fine, but 'Ed' if that is his real name, wanted us to stick it on Amazon's web server. Ultimately we managed to do it, but couldn't find a way to continuously deploy within the time frame. There was a bug that even the tutors had trouble finding. 
+  - Heroku worked fine, but 'Ed', if that is his real name, wanted us to use Amazon's web server. Ultimately we managed to do it, but couldn't find a way to continuously deploy within the provided time frame, as there was a bug that even the tutors had trouble finding. 
   
 How to Deploy:
-  - Acebook The Spartans master branch is automatically deployed on Heroku, providing all RSpec tests pass Travis CI's rigorous testing procedure.
+  - The master branch is automatically deployed on Heroku, providing all RSpec tests pass Travis CI's rigorous testing procedure.
   - This is the link https://acebook-the-spartans.herokuapp.com/users/sign_in
-  - For log-in details and further information on Heroku deployment, contact your local Team Spartan team member, or TSTM for short.
 
 Team Spartan's Team Blog (TSTB)
   - https://medium.com/@makersteamspartan
 
 Technologies Used in The Production of Acebook; in order of appearance:
-  - Rails with Active Record
+  - Rails 
   - Devise
   - Fluffy-Pig
-  - Database Cleaner
-  - Detective Travis CI
+  - Travis CI
   - Capybara
   - TimeCops
   - Heroku
